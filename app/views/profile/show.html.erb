@@ -43,11 +43,29 @@
 
     <footer id="navigation">
       <nav>
-        <div><a href="profile.html"><i class="icon-vcard"></i><span>Summary</span></a></div>
-        <div><a href="experience.html"><i class="icon-progress-2"></i><span>Experience</span></a></div>
-        <div><a href="education.html"><i class="icon-book"></i><span>Education</span></a></div>
-        <div><a href="blog.html"><i class="icon-pencil"></i><span>Blog</span></a></div>
-        <div><a href="contact.html"><i class="icon-paper-plane"></i><span>Contact</span></a></div>
+        <div><%= link_to '#' do %>
+            <i class="icon-vcard"></i><span>Summary</span>
+          <% end %>
+        </div>
+
+        <div><%= link_to '#' do %>
+            <i class="icon-progress-2"></i><span>Experience</span>
+          <% end %>
+        </div>
+        <div><%= link_to '#' do %>
+            <i class="icon-book"></i><span>Education</span>
+          <% end %>
+        </div>
+        <div><%= link_to '#' do %>
+            <i class="icon-pencil"></i><span>Blog</span>
+          <% end %>
+        </div>
+
+       <div><%= link_to '#' do %>
+            <i class="icon-paper-plane"></i><span>Contact</span>
+          <% end %>
+        </div>
+
         <div><a href="#" id="open-social-menu"><i class="icon-plus"></i></a></div>
         <div id="me"><%= image_tag 'person.jpg' %></div>
       </nav>
