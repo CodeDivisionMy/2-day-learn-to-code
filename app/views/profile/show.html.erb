@@ -1,0 +1,66 @@
+<body data-controller="home">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="wrapper">
+    <div id="main">
+      <header id="header">
+        <h1><a href="index.html">Josh Teng</a></h1>
+        <h2><a href="index.html">Developer</a></h2>
+
+        <a href="#" id="openmenu"><i class="icon-list"></i></a>
+        <a href="#" id="closemenu"><i>X</i></a>
+
+        <div class="contact-box">
+          <a href="#" id="box-info">
+            <div class="icon-container"><i class="icon-info"></i></div>
+            <div class="text-container"><p>Tel. 1515-511-65985 <br>mail@company.com</p></div>
+          </a>
+          <a href="#" id="box-download">
+            <div class="icon-container"><i class="icon-download"></i></div>
+            <div class="text-container"><p>Download <br>PDF Resume</p></div>
+          </a>
+        </div>
+      </header>  <!-- #header -->
+
+      <section class="content">
+        <div class="slider-container">
+          <ul id="home-slider" class="slider">
+            <li>
+              <%= image_tag '1.jpg' %>
+              <div class="captions">
+                <h2>Slider with Title here</h2>
+                <p>This case study demonstrates the methods I use to approach a single project. I hope it will inspire you to work with me!</p>
+              </div>
+            </li>
+            <li><%= image_tag '2.jpg' %></li>
+            <li><%= image_tag '3.jpg' %></li>
+          </ul>
+        </div>
+      </section>  <!-- .content -->
+    </div>  <!-- #main -->
+
+    <footer id="navigation">
+      <nav>
+        <div><a href="profile.html"><i class="icon-vcard"></i><span>Summary</span></a></div>
+        <div><a href="experience.html"><i class="icon-progress-2"></i><span>Experience</span></a></div>
+        <div><a href="education.html"><i class="icon-book"></i><span>Education</span></a></div>
+        <div><a href="blog.html"><i class="icon-pencil"></i><span>Blog</span></a></div>
+        <div><a href="contact.html"><i class="icon-paper-plane"></i><span>Contact</span></a></div>
+        <div><a href="#" id="open-social-menu"><i class="icon-plus"></i></a></div>
+        <div id="me"><%= image_tag 'person.jpg' %></div>
+      </nav>
+    </footer>  <!-- #navigation -->
+
+    <div id="social-menu">
+      <ul>
+        <li><a href="#" class="link-dribbble"><i class="icon-dribbble"></i></a></li>
+        <li><a href="#" class="link-twitter"><i class="icon-twitter"></i></a></li>
+        <li><a href="#" class="link-pinterest"><i class="icon-pinterest-circled"></i></a></li>
+        <li><a href="#" class="link-facebook"><i class="icon-facebook"></i></a></li>
+      </ul>
+    </div>
+
+  </div> <!-- .wrapper -->
+</body>
