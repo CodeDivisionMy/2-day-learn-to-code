@@ -10,28 +10,31 @@
         <div class="content-container">
           <div class="scroller">
             <div class="posts">
-              <div class="post">
-                <h1 class="post-title">Using image as a media blog content</h1>
-                <div class="row">
-                  <div class="span4">
-                    <a href="post.html"><img src="img/blog/1.jpg" alt="image alt name"></a>
-                  </div>
-                  <div class="span8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, inventore dolores perspiciatis vero optio. Iusto, sit, expedita, eaque ratione enim ipsa ut tempore animi vero distinctio dolor itaque quae blanditiis.</p>
+              <% Blog.all.each do |b| %>
+                <div class="post">
+                  <h1 class="post-title"><%= b.title %></h1>
+                  <div class="row">
+                    <div class="span4">
+                      <a href="post.html"><img src="img/blog/1.jpg" alt="image alt name"></a>
+                    </div>
+                    <div class="span8">
+                      <p><%= b.body %></p>
 
-                    <p><a href="post.html" class="more">Read more</a></p>
+                      <p><a href="post.html" class="more">Read more</a></p>
+                    </div>
                   </div>
-                </div>
-                <div class="post-meta">
-                  <p>
-                    <a class="date"><i class="icon-calendar"></i> April 25, 2013</a>
-                    <a href="#" class="post-author icon-user">admin</a>
-                    <span class="post-tags"><i class="icon-tag"></i> <a href="#">Photograpy</a> <a href="#">Design</a></span>
-                    <a href="#" class="post-comments icon-comment">3 Comments</a>
-                  </p>
-                </div>
-              </div>  <!-- .post -->
-              
+                  <div class="post-meta">
+                    <p>
+                      <a class="date"><i class="icon-calendar"></i> April 25, 2013</a>
+                      <a href="#" class="post-author icon-user">admin</a>
+                      <span class="post-tags"><i class="icon-tag"></i> <a href="#">Photograpy</a> <a href="#">Design</a></span>
+                      <a href="#" class="post-comments icon-comment">3 Comments</a>
+                    </p>
+                  </div>
+                </div>  <!-- .post -->
+              <% end %>
+
+
               <div class="post">
                 <h1 class="post-title">Using image as a media blog content</h1>
                 <div class="row">
